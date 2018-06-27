@@ -9,5 +9,5 @@ app.use(bodyParser.json());
 app.get('/', function (req, res) {
   res.sendFile(__dirname+'/index.html');
 })
-app.listen(process.envPORT||8080);
+app.listen(process.env.PORT||8080);
 console.log('Run server!');
